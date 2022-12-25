@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<html lang="pt-BR">
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no"/>
+	<title>javascript puro</title>
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<div id="all">
+		<div id="block">
+			<div id="nintendo" class="nintendo nintendo_slide">
+
+				<div class="action_left_behind">
+					<div class="action_left">
+						<div class="command">
+							<div id="button_minus" class="button_minus">-</div>
+							<a title="Layout_Wolves" href="https://kaiodeodato.github.io/Layout-_Lobos/" target="_blank">
+								<div class="analogic analogic_left" onclick="tocar()">
+									<div class="square_1"></div>
+									<div class="square_2"></div>
+									<div class="circle_2"></div>
+								</div>
+							</a>
+							<div class="buttons">
+								<button class="arrow_up_left" title="Pokedex" onclick="openInNewTab('https://kaiodeodato.github.io/Pokedex/')"></button>
+								<button class="arrow_right_left" title="Note_Taker" onclick="openInNewTab('https://kaiodeodato.github.io/Note-Taker/')"></button>
+								<button class="arrow_down_left" title="To Do List" onclick="openInNewTab('https://kaiodeodato.github.io/To-do-list---color-mode/')"></button>
+								<button class="arrow_left_left" title="Projeto Kanban" onclick="openInNewTab('https://kaiodeodato.github.io/Kanban-Project/')"></button>
+							</div>
+						</div>
+						<a title="Instagram" href="https://www.instagram.com/kaiodeodato/" target="_blank">
+							<div class="square" onclick="tocar()"></div>
+						</a>
+						<div id="L-button" class="L-button" onclick="tocar()"></div>
+					</div>
+				</div>
+
+				<div id="screen" class="screen">
+					<div id="gap" class="gap"></div>
+					<div id="visor" class="visor"></div>
+					<h1 id="title" class="title">click here</h1>
+				</div>
+
+				<div class="action_right_behind">
+					<div class="action_right">
+						<div id="button_plus"  class="button_plus">+</div>
+						<div class="command">
+							<div class="buttons buttons_right">
+								<button class="arrow_up_left" title="Calculator" onclick="openInNewTab('https://kaiodeodato.github.io/Project_Calculator/')"></button>
+								<button class="arrow_right_left" title="Table Project" onclick="openInNewTab('https://kaiodeodato.github.io/table_project_1/')"></button>
+								<button class="arrow_down_left" title="Gravity Snake" onclick="openInNewTab('https://kaiodeodato.github.io/gravity_snake/')"></button>
+								<button class="arrow_left_left" title="Genius Game" onclick="openInNewTab('https://kaiodeodato.github.io/Genius-among-us/')"></button>
+							</div>
+							<a title="linkedin" href="https://www.linkedin.com/in/kaio-viana-6ab42016b/" target="_blank">
+								<div class="analogic analogic_right" onclick="tocar()">
+									<div class="square_1"></div>
+									<div class="square_2"></div>
+									<div class="circle_2"></div>
+								</div>
+							</a>
+						</div>
+						
+						<div id="circle" class="circle" onclick="girar()"></div>
+						<div id="R-button" class="R-button" onclick="tocar()"></div>
+					</div>
+				</div>
+				
+			</div>
+			<footer>
+				<audio id="powerup">
+					<source src="powerup.wav" type="audio/wav">
+				</audio>
+				<audio id="kick">
+					<source src="kick.wav" type="audio/wav">
+				</audio>
+				<audio autoplay id="myAudio" controls>
+					<source src="Running_About.mp3" type="audio/mp3">
+				</audio>
+			</footer>
+		</div>
+
+		<div id="shadow" class="shadow pocket"></div>
+
+		<div id="form_back" class="form_back">
+			<div class="form">
+				<form action="https://api.staticforms.xyz/submit" method="post">
+					<input type="hidden" name="accessKey" value="90486d78-7cb2-4f9d-a001-aa85ae45681e">
+					<p>Hi! how can I call you:</p>
+					<input id="form_input" class="form_input" name="name" type="text" autocapitalize="off" required>
+					<p>E-mail:</p>
+					<input id="email_input" class="email_input" name="email" type="text" autocapitalize="off" required>
+					<p>Send me a msg!</p>
+					<textarea id="text_form" name="message" class="text_form" cols="30" rows="10" required></textarea>
+					<div class="form_buttons">
+						<input id="form_button" class="form_button" type="submit" value="Send">
+						<input class="form_button"  type="reset" value="Clean">
+						<button id="out" class="form_button">x</button>
+						<input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/index.html">
+					</div>
+				</form>
+			</div>
+		</div>
+
+	</div>
+
+	
+
+	<script src="script.js"></script>
+</body>
+</html>
