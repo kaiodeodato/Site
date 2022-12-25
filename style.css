@@ -585,3 +585,26 @@ form{
     border-radius: 10px;
 
 }
+
+#title_page{
+    left: 20px;
+    position: absolute;
+    font-family: 'Cutive', serif; 
+    animation-name: gradienteMoviment;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    transition: 4s;
+}
+
+@keyframes gradienteMoviment{
+    0%{
+        scale: 1;
+    }
+    50%{
+        scale: 1.02;
+    }
+    100%{
+        scale: 1;
+    }
+}
+
