@@ -1,7 +1,3 @@
-setTimeout(()=>{
-    let shadow = document.getElementById('shadow');
-    shadow.classList.remove('pocket');
-},100)
 
 
 var audio = document.getElementById("myAudio");
@@ -38,25 +34,21 @@ function girar(){
     let screen = document.getElementById('screen');
     let gap = document.getElementById('gap');
     let visor = document.getElementById('visor');
-    let shadow = document.getElementById('shadow');
     let title = document.getElementById('title');
 
     screen.classList.add('minus');
     gap.classList.add('vanish');
     visor.classList.add('vanish');
     title.classList.add('gone');
-    shadow.classList.add('pocket');
   }
   function maximizar(){
     powerup.play();
     let screen = document.getElementById('screen');
     let gap = document.getElementById('gap');
     let visor = document.getElementById('visor');
-    let shadow = document.getElementById('shadow');
     let title = document.getElementById('title');
 
     screen.classList.remove('minus');
-    shadow.classList.remove('pocket');
 
     setTimeout(() => {
         gap.classList.remove('vanish');
@@ -81,8 +73,6 @@ function toPlay(){
 var circle = document.getElementById('circle').addEventListener('click',toRotate)
 
 function toRotate(){
-    let shadow = document.getElementById('shadow');
-    shadow.classList.add('vanish');
 
     let nintendo = document.getElementById('nintendo');
     nintendo.classList.add('nintendo_spin')
@@ -90,9 +80,6 @@ function toRotate(){
     setTimeout(()=>{
         nintendo.classList.remove('nintendo_spin')
     },3000)
-    setTimeout(()=>{
-        shadow.classList.remove('vanish');
-    },2500)
 }
 
 var title = document.getElementById('title').addEventListener('click',openForm)
