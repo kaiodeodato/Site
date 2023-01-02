@@ -514,16 +514,7 @@ audio::-webkit-media-controls-panel{
     display: flex;
 }
 
-.shadow{
-    position: absolute;
-    background-color: #2e2631a4;
-    width: 1100px;
-    height: 30px;
-    bottom: 180px;
-    border-radius: 50%;
-    filter: blur(30px);
-    transition: 2s;
-}
+
 .pocket{
     scale: 0.4;
 }
